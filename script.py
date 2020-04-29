@@ -46,9 +46,9 @@ def run(filename):
                           'blue': [0.2, 0.5, 0.5]}]
     reflect = '.white'
 
-    print(symbols)
+    #print(symbols)
     for command in commands:
-        print(command)
+        #print(command)
 
         op = command['op']
         args = command['args']
@@ -129,7 +129,7 @@ def run(filename):
             tmp = []
 
         elif(op == 'save'):
-            save_extension(screen, args[0])
-            
+            save_extension(screen, args[0] + '.png')
+
         elif(op == 'display'):
             display(screen)
